@@ -14,7 +14,6 @@ app.controller("contentController",function($scope,$controller, baseService){
         );
     };
 
-    /** 跳转到搜索系统 */
     $scope.search = function(){
         var keyword = $scope.keywords ? $scope.keywords : "";
         location.href = "http://search.pinyougou.com?keywords=" + keyword;
